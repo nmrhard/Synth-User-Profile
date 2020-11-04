@@ -30,7 +30,7 @@
   },
   "browserslist": [
     "last 2 versions",
-    "IE 11",
+    "IE 10",
     "Firefox ESR"
   ],
   "editorconfig-cli": [

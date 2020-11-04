@@ -126,8 +126,8 @@ const serverinit = () => {
 exports.serverinit = serverinit;
 
 const build = (done) => {
-   gulp.series(clean, jscompress, copy, css, htmlminify);
-   done();
+  gulp.series(clean, jscompress, copy, css, htmlminify);
+  done();
 }
 
 exports.build = build;

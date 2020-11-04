@@ -1,0 +1,39 @@
+.main-nav__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-mav__item:not(:last-child) {
+  margin-right: 38px;
+}
+
+.mian-mav__link {
+  position: relative;
+  display: block;
+  padding-bottom: 23px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: @darken;
+  opacity: 0.6;
+
+  &--active {
+    opacity: 1;
+
+    &::before {
+      .nav-line
+    }
+  }
+
+  &:hover {
+    opacity: 1;
+
+    &::before {
+      .nav-line
+    }
+  }
+}

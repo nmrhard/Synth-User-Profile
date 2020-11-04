@@ -1,22 +1,181 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
   <meta charset="utf-8">
-  <title></title>
+  <title>Synth User Profile</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link rel="preload" href="" as="font" crossorigin="anonymous">
-  <link rel="preload" href="" as="font" crossorigin="anonymous">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
   <header class="page-header">
-
+    <div class="container container--relative">
+      <div class="page-header__top">
+        <a href="/" class="logo">
+          <img src="img/logo.svg" width="50" height="23" alt="Synth">
+        </a>
+        <div class="profile">
+          <a href="/" class="profile__user">
+            <span class="profile__name">Arthur Wood</span>
+            <img class="profile__image" src="img/user.jpg" width="32" height="32" alt="Arthur Wood's photo">
+            <div class="profile__arrow"><span class="visually-hidden">Arrow down</span></div>
+          </a>
+          <div class="profile__actions">
+            <a class="profile__icon profile__icon--notifications" href="/"><span class="visually-hidden">Notifications</span></a>
+            <a class="profile__icon profile__icon--share" href="/"><span class="visually-hidden">Share</span></a>
+            <a class="profile__icon profile__icon--medium" href="/"><span class="visually-hidden"></span></a>
+          </div>
+        </div>
+      </div>
+      <nav class="main-nav">
+        <ul class="main-nav__list">
+          <li class="main-mav__item"><a class="mian-mav__link mian-mav__link--active">Feed</a></li>
+          <li class="main-mav__item"><a href="/" class="mian-mav__link">Explore</a></li>
+          <li class="main-mav__item"><a href="/" class="mian-mav__link">Discussions</a></li>
+        </ul>
+      </nav>
+      <button class="page-header__button" type="button"><span class="visually-hidden">Actions</span></button>
+    </div>
   </header>
   <main class="page-main">
-
+    <div class="container">
+      <h1 class="visually-hidden">Profile page</h1>
+      <div class="columns">
+        <section class="user">
+          <h2 class="visually-hidden">Profile details</h2>
+          <div class="user__details">
+            <div class="user__image-wrapper">
+              <img class="user__image" src="img/main-user-photo.jpg" width="120" height="120" alt="Benjamin Clementine's photo">
+            </div>
+            <div class="user__profile">
+              <p class="user__name"><b>Benjamin Clementine</b></p>
+              <button class="user__menu-button" type="button"><span class="visually-hidden">User action menu</span></button>
+              <span class="user__nickname">@benclementine</span>
+              <a href="/" class="user__edit">Edit Profile</a>
+              <ul class="user__actions">
+                <li class="user-actions__item"><a href="/" class="user-actions__link user-actions__link--report">Report User</a></li>
+                <li class="user-actions__item"><a href="/" class="user-actions__link user-actions__link--block">Block User</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="user__stats stats">
+            <dl class="stats__item">
+              <dt class="stats__name">synths</dt>
+              <dd class="stats__value">45</dd>
+            </dl>
+            <dl class="stats__item">
+              <dt class="stats__name">followers</dt>
+              <dd class="stats__value">110</dd>
+            </dl>
+            <dl class="stats__item">
+              <dt class="stats__name">following</dt>
+              <dd class="stats__value">322</dd>
+            </dl>
+          </div>
+          <p class="user__descr">
+            Cryptocurrencies including Ethereum, Ripple, and Litecoin have all plunged between 20 to 30 percent each,
+            according to CoinMarketCap. Here is the latest Ripple price news and live updates on XRP, bitcoin and
+            Ethereum.
+          </p>
+        </section>
+        <section class="feed">
+          <h2 class="visually-hidden">User Feed</h2>
+          <div class="privacy-switcher">
+            <span class="privacy-switcher__label">Public</span>
+            <label class="privacy-switcher__control switcher">
+              <input class="switcher__input visually-hidden" type="checkbox">
+              <span class="switcher__slider switcher__round"></span>
+            </label>
+            <span class="privacy-switcher__label">Private</span>
+          </div>
+          <ul class="cards">
+            <li class="card__item">
+              <p class="card__text">New air routes that promise cheap flights in</p>
+              <div class="card__bottom">
+                <a href="/" class="card__author">
+                  <img class="card__author-image" src="img/card-photo.svg" width="24" height="24" alt="Gregory Watkins's photo">
+                  <span class="card_author__name">Gregory Watkins</span>
+                </a>
+                <a href="/" class="card__share">Share</a>
+              </div>
+            </li>
+            <li class="card__item">
+              <p class="card__text">New air routes that promise cheap flights in</p>
+              <div class="card__bottom">
+                <a href="/" class="card__author">
+                  <img class="card__author-image" src="img/card-photo.svg" width="24" height="24" alt="Gregory Watkins's photo">
+                  <span class="card_author__name">Gregory Watkins</span>
+                </a>
+                <a href="/" class="card__share">Share</a>
+              </div>
+            </li>
+            <li class="card__item">
+              <div class="card__top">
+                <p class="card__shared">Shared to <a href="/" class="card__shared-tag">#discussionaboutanimgttdds…</a></p>
+              </div>
+              <p class="card__text">New air routes that promise cheap flights in</p>
+              <div class="card__bottom">
+                <a href="/" class="card__author">
+                  <img class="card__author-image" src="img/card-photo.svg" width="24" height="24" alt="Gregory Watkins's photo">
+                  <span class="card_author__name">Gregory Watkins</span>
+                </a>
+                <div class="card__stats">
+                  <div class="card__view">
+                    <button class="card__button-stats" type="button">
+                      <svg width="16" height="16">
+                        <use xlink:href="img/svg-sprite.svg#icon-view"></use>
+                      </svg>
+                    </button>
+                    <span class="card__stats-value">88</span>
+                  </div>
+                  <div class="card__likes">
+                    <button class="card__button-stats" type="button">
+                      <svg width="16" height="14">
+                        <use xlink:href="img/svg-sprite.svg#icon-likes"></use>
+                      </svg>
+                    </button>
+                    <span class="card__stats-value">24</span>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="card__item">
+              <div class="card__top">
+                <p class="card__shared card__shared--link">Shared via <a href="/" class="card__shared-link">weblink</a></p>
+              </div>
+              <p class="card__text">New air routes that promise cheap flights in</p>
+              <div class="card__bottom">
+                <a href="/" class="card__author">
+                  <img class="card__author-image" src="img/card-photo.svg" width="24" height="24" alt="Gregory Watkins's photo">
+                  <span class="card_author__name">Gregory Watkins</span>
+                </a>
+                <div class="card__stats">
+                  <div class="card__view">
+                    <button class="card__button-stats" type="button">
+                      <svg width="16" height="16">
+                        <use xlink:href="img/svg-sprite.svg#icon-view"></use>
+                      </svg>
+                    </button>
+                    <span class="card__stats-value">88</span>
+                  </div>
+                  <div class="card__likes">
+                    <button class="card__button-stats" type="button">
+                      <svg width="16" height="14">
+                        <use xlink:href="img/svg-sprite.svg#icon-likes"></use>
+                      </svg>
+                    </button>
+                    <span class="card__stats-value">24</span>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </div>
   </main>
-  <footer class="page-footer">
-
-  </footer>
+  <script src="js/svgxuse.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>

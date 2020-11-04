@@ -1,28 +1,13 @@
-@font-face {
-  font-family: "";
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url("../fonts/") format("woff2"), url("../fonts/") format("woff");
-}
-
-@font-face {
-  font-family: "";
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url("../fonts/") format("woff2"), url("../fonts/") format("woff");
-}
-
 body {
   min-width: 320px;
   margin: 0;
   padding: 0;
-  font-size: 14px;
-  line-height: 18px;
-  font-family: "Arial", sans-serif;
-  color: ;
-  background: @white;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  font-family: 'Open Sans', sans-serif;
+  color: @dark;
+  background: @light-grey;
 }
 
 a {
@@ -32,4 +17,19 @@ a {
 img {
   max-width: 100%;
   height: auto;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.page-main {
+  padding-top: 72px;
+}
+
+.columns {
+  display: flex;
+  justify-content: space-between;
 }
