@@ -7,3 +7,28 @@
     position: relative;
   }
 }
+
+@media (max-width: 1250px) {
+  .container {
+    width: 1000px;
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .container {
+    width: calc(@tablet-width + 1px);
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: @tablet-width) {
+  .container {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .page-header .container {
+    padding: 0;
+  }
+}

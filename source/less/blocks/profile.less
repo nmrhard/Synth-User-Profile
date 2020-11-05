@@ -3,16 +3,21 @@
   align-items: center;
 }
 
+.profile__wprapper {
+  display: flex;
+}
+
 .profile__user {
   display: flex;
   align-items: center;
-  margin-right: 13px;
+  margin-right: 12px;
   color: @dark;
 }
 
 .profile__name {
-  margin-right: 18px;
+  margin-right: 20px;
   line-height: 20px;
+  letter-spacing: -0.5px;
 }
 
 .profile__image {
@@ -51,4 +56,17 @@
 
 .profile__icon--medium {
   background-image: url("../../img/medium.svg");
+}
+
+@media (max-width: @tablet-width) {
+  .profile {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: @mobile-width) {
+  .profile__name {
+    display: none;
+  }
 }

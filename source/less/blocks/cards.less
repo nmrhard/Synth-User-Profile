@@ -62,6 +62,8 @@
   margin-bottom: 8px;
   font-weight: 600;
   line-height: 22px;
+  overflow: hidden;
+  white-space: nowrap;
   color: @darken;
 }
 
@@ -117,4 +119,21 @@
 .card__likes {
   display: flex;
   align-items: center;
+}
+
+@media (max-width: 1250px) {
+  .cards {
+    margin: 0;
+  }
+  .card__item {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: @mobile-width) {
+  .card__text {
+    font-size: 26px;
+    line-height: 34px;
+  }
 }

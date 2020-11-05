@@ -16,19 +16,24 @@
           <img src="img/logo.svg" width="50" height="23" alt="Synth">
         </a>
         <div class="profile">
-          <a href="/" class="profile__user">
-            <span class="profile__name">Arthur Wood</span>
-            <img class="profile__image" src="img/user.jpg" width="32" height="32" alt="Arthur Wood's photo">
-            <div class="profile__arrow"><span class="visually-hidden">Arrow down</span></div>
-          </a>
-          <div class="profile__actions">
-            <a class="profile__icon profile__icon--notifications" href="/"><span class="visually-hidden">Notifications</span></a>
-            <a class="profile__icon profile__icon--share" href="/"><span class="visually-hidden">Share</span></a>
-            <a class="profile__icon profile__icon--medium" href="/"><span class="visually-hidden"></span></a>
+          <button class="page-header__toggle-menu page-header__toggle-menu--closed page-header__toggle-menu--nojs" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+          <div class="profile__wprapper">
+            <a href="/" class="profile__user">
+              <span class="profile__name">Arthur Wood</span>
+              <img class="profile__image" src="img/user.jpg" width="32" height="32" alt="Arthur Wood's photo">
+              <div class="profile__arrow"><span class="visually-hidden">Arrow down</span></div>
+            </a>
+            <div class="profile__actions">
+              <a class="profile__icon profile__icon--notifications" href="/"><span class="visually-hidden">Notifications</span></a>
+              <a class="profile__icon profile__icon--share" href="/"><span class="visually-hidden">Share</span></a>
+              <a class="profile__icon profile__icon--medium" href="/"><span class="visually-hidden"></span></a>
+            </div>
           </div>
         </div>
       </div>
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--closed">
         <ul class="main-nav__list">
           <li class="main-mav__item"><a class="mian-mav__link mian-mav__link--active">Feed</a></li>
           <li class="main-mav__item"><a href="/" class="mian-mav__link">Explore</a></li>
