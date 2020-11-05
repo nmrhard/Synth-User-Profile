@@ -100,6 +100,7 @@ const copy = () => {
     "source/img/**",
     "source/js/**/*.min.js",
     "source/css/**",
+    "source/*.html",
     "source/*.ico"
   ], {
     base: "source"
@@ -126,7 +127,7 @@ const serverinit = () => {
 exports.serverinit = serverinit;
 
 const build = (done) => {
-  gulp.series(clean, jscompress, copy, css, htmlminify);
+  gulp.series(clean, jscompress, copy, css);
   done();
 }
 
